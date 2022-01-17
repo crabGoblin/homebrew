@@ -1,4 +1,5 @@
 {
+	"siteVersion": "1.147.14",
 	"_meta": {
 		"sources": [
 			{
@@ -19,274 +20,9 @@
 				"version": "unknown"
 			}
 		],
-		"dateAdded": 1603738912,
-		"dateLastModified": 1605588868
+		"dateAdded": 1642450344,
+		"dateLastModified": 1642450344
 	},
-	"monster": [
-		{
-			"name": "Darkenbeast",
-			"source": "TheInCompleteTomeofSpells",
-			"page": 23,
-			"size": "M",
-			"type": "monstrosity",
-			"alignment": [
-				"N",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 14,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "6d8 + 6",
-				"average": 33
-			},
-			"speed": {
-				"walk": 5,
-				"fly": 50,
-				"canHover": false
-			},
-			"str": 14,
-			"dex": 11,
-			"con": 13,
-			"int": 1,
-			"wis": 6,
-			"cha": 1,
-			"skill": {
-				"perception": "+0",
-				"stealth": "+2"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 10,
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"exhaustion",
-				"frightened",
-				"stunned"
-			],
-			"cr": "2",
-			"trait": [
-				{
-					"name": "Created Mind",
-					"entries": [
-						"The darkenbeast can't be compelled to act in a manner contrary to its nature or instructions."
-					]
-				},
-				{
-					"name": "Death Burst",
-					"entries": [
-						"When the darkenbeast dies, it explodes in a burst of violet flames. Each creature within 5 feet of it must make a {@dc 11} Dexterity saving throw, taking 9 ({@damage 2d8}) fire damage on a failed save, or half as much damage on a successful one."
-					]
-				},
-				{
-					"name": "Imprinted Spell",
-					"entries": [
-						"The darkenbeast may have a single spell of 5th level or lower imprinted in it. It may then cast the spell once without the need for any components, using its creator's spell save DC and spell attack bonus. When the darkenbeast casts the spell, roll a {@dice d4}. On a 1, the spell fails to work properly. Whether the spell is successful or not, the darkenbeast instantly dies and explodes."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The darkenbeast has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Sunlight Hypersensitivity",
-					"entries": [
-						"The darkenbeast takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The darkenbeast makes three attacks: one with its bite and two with its claws."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 3}) slashing damage."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
-					]
-				}
-			],
-			"fluff": {
-				"entries": [
-					"A darkenbeast, also called a death horror or dark horror, was an artificial magical beast created by evil spellcasters. They were transformed from ordinary animals into terrifying monsters loyal to their master's will."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://static.wikia.nocookie.net/forgottenrealms/images/a/aa/Darkenbeast_3e.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://static.wikia.nocookie.net/forgottenrealms/images/a/aa/Darkenbeast_3e.jpg",
-			"traitTags": [
-				"Death Burst",
-				"Magic Resistance",
-				"Sunlight Sensitivity"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"S",
-				"P",
-				"F",
-				"R"
-			],
-			"miscTags": [
-				"AOE",
-				"MW"
-			]
-		},
-		{
-			"name": "Fantastic Machine",
-			"source": "TheInCompleteTomeofSpells",
-			"page": 36,
-			"size": "L",
-			"type": "construct",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"special": "14 + the level of the spell (natural armor)"
-				}
-			],
-			"hp": {
-				"special": "25 + ten times the spell's level"
-			},
-			"speed": {
-				"walk": 40,
-				"fly": {
-					"number": 10,
-					"condition": "(hover)"
-				},
-				"canHover": true,
-				"burrow": 20,
-				"climb": 10
-			},
-			"str": 20,
-			"dex": 10,
-			"con": 20,
-			"int": 1,
-			"wis": 5,
-			"cha": 1,
-			"passive": 7,
-			"resist": [
-				"acid",
-				"cold",
-				"fire",
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks"
-				}
-			],
-			"immune": [
-				"poison",
-				"psychic"
-			],
-			"vulnerable": [
-				"force"
-			],
-			"conditionImmune": [
-				"charmed",
-				"deafened",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"poisoned",
-				"unconscious"
-			],
-			"languages": [
-				"understands the languages of its creator but can't speak"
-			],
-			"trait": [
-				{
-					"name": "Beast of Burden",
-					"entries": [
-						"The fantastic machine is considered to be a Gargantuan construct for the purposes of determining its carrying capacity"
-					]
-				},
-				{
-					"name": "Immutable Form",
-					"entries": [
-						"The fantastic machine is immune to any spell or effect that would alter its form"
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 5} + the spell's level to hit, reach 15 ft., one target. {@h}18 ({@damage 2d12 + 5}) + the spell's level bludgeoning damage."
-					]
-				},
-				{
-					"name": "Throw Object",
-					"entries": [
-						"{@atk rw} {@hit 0} + the spell's level to hit, range 60/180 ft., one target. {@h}10 ({@damage 3d6}) + the spell's level bludgeoning damage."
-					]
-				}
-			],
-			"fluff": {
-				"entries": [
-					"Created from the Fantastic Machine spell."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.pinimg.com/originals/0c/dc/08/0cdc087cc57f530ae2611a9773fd892c.png"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://i.pinimg.com/originals/0c/dc/08/0cdc087cc57f530ae2611a9773fd892c.png",
-			"traitTags": [
-				"Immutable Form"
-			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"B"
-			],
-			"miscTags": [
-				"MW",
-				"RCH",
-				"RW"
-			]
-		}
-	],
 	"spell": [
 		{
 			"name": "Banish Dazzle",
@@ -526,6 +262,9 @@
 				"You and the creatures you designate when you cast this spell can use the object normally, and you can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Casting knock on the object suppresses sigil for 10 minutes. ",
 				"If you cast this spell on the same object every day for 30 days, the spell becomes permanent."
 			],
+			"miscTags": [
+				"FMV"
+			],
 			"classes": {
 				"fromClassList": [
 					{
@@ -537,10 +276,7 @@
 						"source": "PHB"
 					}
 				]
-			},
-			"miscTags": [
-				"FMV"
-			]
+			}
 		},
 		{
 			"name": "Sound Bubble",
@@ -1989,6 +1725,9 @@
 			"savingThrow": [
 				"strength"
 			],
+			"miscTags": [
+				"FMV"
+			],
 			"areaTags": [
 				"S"
 			],
@@ -2007,10 +1746,7 @@
 						"source": "PHB"
 					}
 				]
-			},
-			"miscTags": [
-				"FMV"
-			]
+			}
 		},
 		{
 			"name": "Alpha's Aurora Borealis",
@@ -2124,6 +1860,9 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"miscTags": [
+				"FMV"
+			],
 			"classes": {
 				"fromClassList": [
 					{
@@ -2139,10 +1878,7 @@
 						"source": "PHB"
 					}
 				]
-			},
-			"miscTags": [
-				"FMV"
-			]
+			}
 		},
 		{
 			"name": "Communicate",
@@ -2315,6 +2051,9 @@
 			"savingThrow": [
 				"dexterity"
 			],
+			"miscTags": [
+				"FMV"
+			],
 			"classes": {
 				"fromClassList": [
 					{
@@ -2326,10 +2065,7 @@
 						"source": "PHB"
 					}
 				]
-			},
-			"miscTags": [
-				"FMV"
-			]
+			}
 		},
 		{
 			"name": "Holy Crown",
@@ -2613,7 +2349,7 @@
 				}
 			],
 			"entries": [
-				"You fire three beams of light\u2014one blue, one white, and one yellow\u2014which twist around each other into a single projectile that strikes at a target within range. Make a ranged spell attack. On a hit, the creature takes one of the following:",
+				"You fire three beams of light—one blue, one white, and one yellow—which twist around each other into a single projectile that strikes at a target within range. Make a ranged spell attack. On a hit, the creature takes one of the following:",
 				"• {@damage 4d8} acid damage, {@damage 4d8} cold damage, and {@damage 4d8} lightning damage.",
 				"• {@damage 4d8} fire damage, {@damage 4d8} poison damage, and {@damage 4d8} thunder damage."
 			],
@@ -3792,7 +3528,7 @@
 				}
 			],
 			"entries": [
-				"A wall of thin, misty, silvery smoke\u2014the visible form of Time itself\u2014springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free-floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot- by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration.",
+				"A wall of thin, misty, silvery smoke—the visible form of Time itself—springs into existence at a point you choose within range. The wall appears in any orientation you choose, as a horizontal or vertical barrier or at an angle. It can be free-floating or resting on a solid surface. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot- by-10-foot panels. Each panel must be contiguous with another panel. In any form, the wall is 1/4 inch thick. It lasts for the duration.",
 				"One side of the wall, selected by you when you cast this spell, slows down everything that passes through it. If a creature travels through the wall, its speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can't use reactions until the end of its turn. Any ranged attack that enters the wall's space has a disadvantage on the attack roll and inflicts half damage. Any effect that passes through the wall that requires the targets to make a Dexterity saving throw, that saving throw may be made with advantage. ",
 				"The other side of the wall speeds up the missile and thrown weapons that are fired through it. These attacks inflict an additional die of damage ",
 				"The wall is immune to all damage and can't be dispelled by dispel magic. A disintegrate or spell destroys the wall instantly, however. The wall also extends into the Ethereal Planes, blocking ethereal travel through the wall."
@@ -3892,7 +3628,7 @@
 				}
 			],
 			"entries": [
-				"With this spell, you create wild fluctuations in the probabilities of existence, affecting all nonliving, inanimate, nonmagical objects in a 10-foot cube centered on a point you choose within range. Whenever a creature attempts to interact with an object in any way, the DM will roll a die. On an odd number, the object simply doesn't exist for that creature at that moment. If multiple creatures attempt to interact with an object at the same time, the DM will roll for each one\u2014an object may exist for one creature but not for another.",
+				"With this spell, you create wild fluctuations in the probabilities of existence, affecting all nonliving, inanimate, nonmagical objects in a 10-foot cube centered on a point you choose within range. Whenever a creature attempts to interact with an object in any way, the DM will roll a die. On an odd number, the object simply doesn't exist for that creature at that moment. If multiple creatures attempt to interact with an object at the same time, the DM will roll for each one—an object may exist for one creature but not for another.",
 				"The DM will also roll a die for any object that is removed from the area while the spell is still active. On an odd number, the object vanishes for good."
 			],
 			"classes": {
@@ -11613,7 +11349,7 @@
 				}
 			],
 			"entries": [
-				"You touch a creature and cause one physical or emotional sensation\u2014pleasurable, painful, or other\u2014that it is currently experiencing to magnify to incredible intensity. At the beginning of each of its turns, it must succeed on a Constitution saving throw or be {@condition stunned} until the start of its next turn. A creature that can't be {@condition charmed} or that is under the effect of the drive insensate (q.v.) is immune to this spell. ",
+				"You touch a creature and cause one physical or emotional sensation—pleasurable, painful, or other—that it is currently experiencing to magnify to incredible intensity. At the beginning of each of its turns, it must succeed on a Constitution saving throw or be {@condition stunned} until the start of its next turn. A creature that can't be {@condition charmed} or that is under the effect of the drive insensate (q.v.) is immune to this spell. ",
 				"If a creature succeeds on three saving throws, the effect ends on it. The saves don't need to be successive."
 			],
 			"entriesHigherLevel": [
@@ -12975,6 +12711,9 @@
 			"conditionInflict": [
 				"stunned"
 			],
+			"miscTags": [
+				"FMV"
+			],
 			"classes": {
 				"fromClassList": [
 					{
@@ -12986,10 +12725,7 @@
 						"source": "PHB"
 					}
 				]
-			},
-			"miscTags": [
-				"FMV"
-			]
+			}
 		},
 		{
 			"name": "Forcelash",
@@ -13043,6 +12779,9 @@
 			"abilityCheck": [
 				"constitution"
 			],
+			"miscTags": [
+				"FMV"
+			],
 			"classes": {
 				"fromClassList": [
 					{
@@ -13062,10 +12801,7 @@
 						"source": "PHB"
 					}
 				]
-			},
-			"miscTags": [
-				"FMV"
-			]
+			}
 		},
 		{
 			"name": "Ghost Pipes",
@@ -15040,8 +14776,13 @@
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "self"
+					"type": "feet",
+					"amount": 60
 				}
+			},
+			"components": {
+				"v": true,
+				"s": true
 			},
 			"duration": [
 				{
@@ -15050,9 +14791,6 @@
 			],
 			"entries": [
 				"You fire a missile of magical green energy. Make a ranged spell attack. On a hit, the energy briefly encases the target in a green field, causing the target to fall {@condition prone}. Until the end of its next turn, the target cannot take reactions. On its next turn, standing up requires spending an action to do so, instead of half their movement."
-			],
-			"conditionInflict": [
-				"prone"
 			],
 			"savingThrow": [
 				"dexterity"
